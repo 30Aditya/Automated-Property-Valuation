@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from mpl_toolkits.mplot3d import Axes3D
 
-# ------ SAMPLE DATA ------
+# SAMPLE DATA
 data = {
     'area_sqft': [1000, 1500, 2000, 1800, 2400, 3000, 3500, 4000],
     'bedrooms': [2, 3, 3, 3, 4, 4, 4, 5],
@@ -76,4 +76,5 @@ cluster = kmeans.predict(new_house_scaled)[0]
 estimated_price = cluster_prices[cluster]
 
 print("\nThe new house belongs to Cluster:", cluster)
+
 print("Estimated Price Range:", estimated_price, "Lakhs")
